@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil | Bimbel Modeling</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* khusus rapikan tampilan foto menyamping */
+        .team-grid{
+            display:flex;
+            gap:30px;
+            flex-wrap:wrap;
+            justify-content:center;
+        }
+        .team-card{
+            background:#fff;
+            border-radius:12px;
+            width:300px;
+            text-align:center;
+            overflow:hidden;
+            box-shadow:0 4px 10px rgba(0,0,0,0.1);
+        }
+        .team-image img{
+            width:100%;
+            height:280px;
+            object-fit:cover;
+        }
+        .team-info{
+            padding:15px;
+        }
+        .team-title{
+            color:#ff9800;
+            font-weight:bold;
+            display:block;
+            margin:5px 0;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="container">
+        <a href="index.html" class="logo">BIMBEL <span>MODELING</span></a>
+
+        <ul class="nav-links">
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="profil.html" class="active"><i class="fas fa-user"></i> Profil</a></li>
+            <li><a href="galeri.html"><i class="fas fa-image"></i> Galeri</a></li>
+            <li><a href="kontak.html"><i class="fas fa-envelope"></i> Kontak</a></li>
+        </ul>
+
+        <button class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
+</nav>
+
+<header class="page-header">
+    <div class="container">
+        <h1>Profil Bimbel Modeling</h1>
+        <p>Tim mentor profesional kami</p>
+    </div>
+</header>
+
+<section class="team">
+    <div class="container">
+
+        <div class="team-grid">
+
+            <div class="team-card">
+                <div class="team-image">
+                    <img src="jesica.jpeg" alt="Jesica">
+                </div>
+                <div class="team-info">
+                    <h3>Jesica</h3>
+                    <span class="team-title">Mentor Modeling</span>
+                    <p>Berpengalaman dalam dunia modeling dan fashion show.</p>
+                </div>
+            </div>
+
+            <div class="team-card">
+                <div class="team-image">
+                    <img src="jhona.jpeg" alt="Jhona">
+                </div>
+                <div class="team-info">
+                    <h3>Jhona</h3>
+                    <span class="team-title">Trainer Catwalk</span>
+                    <p>Spesialis catwalk, pose, dan kepercayaan diri.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <p>© 2026 Bimbel Modeling</p>
+    </div>
+</footer>
+
+<script>
+const menuToggle = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+menuToggle.addEventListener('click',()=>navLinks.classList.toggle('active'));
+</script>
+
+</body>
+</html>
